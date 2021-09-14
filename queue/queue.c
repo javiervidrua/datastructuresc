@@ -31,7 +31,7 @@ void queue_clear(Queue *q){
 int queue_pop(Queue *q, Data *data){
 	printf("queue: Popping\n");
 	
-	Node * last = NULL, *lastlast = NULL;
+	Node *last = NULL, *lastlast = NULL;
 	
 	if(q->size <= 0){
 		return 1;
@@ -70,7 +70,7 @@ int queue_pop(Queue *q, Data *data){
 int queue_push(Queue *q, Data data){
 	printf("queue: Pushing\n");
 	
-	Node * new = NULL;
+	Node *new = NULL;
 	
 	if(q->size >= QUEUE_SIZE_MAX){
 		return 1;
@@ -94,7 +94,7 @@ int queue_size(Queue *q){
 void queue_print(Queue *q){
 	printf("queue: Printing\n");
 	
-	Node * top = q->top;
+	Node *top = q->top;
 	int i = 1;
 	
 	while( q->size>0 && top!=NULL){

@@ -31,7 +31,7 @@ void stack_clear(Stack *s){
 int stack_pop(Stack *s, Data *data){
 	printf("stack: Popping\n");
 	
-	Node * top = NULL;
+	Node *top = NULL;
 	
 	if(s->size <= 0){
 		return 1;
@@ -49,7 +49,7 @@ int stack_pop(Stack *s, Data *data){
 int stack_push(Stack *s, Data data){
 	printf("stack: Pushing\n");
 	
-	Node * new = NULL;
+	Node *new = NULL;
 	
 	if(s->size >= STACK_SIZE_MAX){
 		return 1;
@@ -73,7 +73,7 @@ int stack_size(Stack *s){
 void stack_print(Stack *s){
 	printf("stack: Printing\n");
 	
-	Node * top = s->top;
+	Node *top = s->top;
 	int i = 1;
 	
 	while( s->size>0 && top!=NULL){
