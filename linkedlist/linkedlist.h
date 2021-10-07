@@ -3,6 +3,8 @@
 
 
 // ========================================================================= //
+#ifndef LINKEDLIST_H
+#define LINKEDLIST_H
 #define LINKEDLIST_SIZE_MAX 10
 
 
@@ -32,3 +34,4 @@ int linkedlist_remove(Linkedlist *l, Data *data);
 int linkedlist_remove_at_index(Linkedlist *l, Data *data, int index);
 int linkedlist_size(Linkedlist *l);
 void linkedlist_print(Linkedlist *l);
+#endif // LINKEDLIST_H

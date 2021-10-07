@@ -3,6 +3,8 @@
 
 
 // ========================================================================= //
+#ifndef QUEUE_H
+#define QUEUE_H
 #define QUEUE_SIZE_MAX 10
 
 
@@ -29,3 +31,4 @@ int queue_pop(Queue *q, Data *data);
 int queue_push(Queue *q, Data data);
 int queue_size(Queue *q);
 void queue_print(Queue *q);
+#endif // QUEUE_H

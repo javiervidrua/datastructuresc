@@ -3,6 +3,8 @@
 
 
 // ========================================================================= //
+#ifndef STACK_H
+#define STACK_H
 #define STACK_SIZE_MAX 10
 
 
@@ -29,3 +31,4 @@ int stack_pop(Stack *s, Data *data);
 int stack_push(Stack *s, Data data);
 int stack_size(Stack *s);
 void stack_print(Stack *s);
+#endif // STACK_H
